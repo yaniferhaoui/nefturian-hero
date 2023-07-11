@@ -34,7 +34,7 @@ app.use(cors()); // Add this line to enable CORS
 
 // Endpoint to get creature's Nefturian
 app.get('/nefturian/:address', async (req, res) => {
-  const { address } = req.params;
+  let { address } = req.params;
 
   if (address.trim().length === 0) {
     res.status(500)
@@ -48,6 +48,9 @@ app.get('/nefturian/:address', async (req, res) => {
         .json({ error: 'This address is not a valid Ethereum Address !' });
     return;
   }
+
+  // Normalize address
+  address = Web3.utils.toChecksumAddress(address);
 
   console.log("Get or Create Nefturian: " + address);
   let nefturianId = getNetfturianId(address);

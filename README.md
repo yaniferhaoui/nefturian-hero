@@ -101,3 +101,17 @@ Here's an outline of how we'll achieve that :
     npm --prefix frontend/ run dev
 
 Now, when we access the frontend at http://localhost:3000, we can enter an Ethereum address and click the "Get or Create Nefturian" button to assign or get the Nefturian associated to the address !
+
+### Outputs
+
+<div style="text-align:center; width: 100%">
+  <img src="https://i.ibb.co/N2chq7x/Screenshot-2023-07-11-at-11-23-46-Screenshot.png"  width="40%">
+</div>
+
+<div style="text-align:center; width: 100%">
+  <img src="https://i.ibb.co/CVWVX5H/Screenshot-2023-07-11-at-11-24-04-Screenshot.png"  width="40%">
+</div>
+
+<div style="text-align:center; width: 100%">
+  <img src="https://i.ibb.co/n00J8xm/Screenshot-from-2023-07-11-11-31-04.png"  width="40%">
+</div>
